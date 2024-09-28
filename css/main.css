@@ -1,0 +1,824 @@
+@font-face {
+	font-family: "Pastorof";
+	src: url('../fonts/PASTOROF.TTF');
+}
+
+.inputtext{ font-size:18px !important; }
+
+#user{ color: #000000; }
+
+#content{
+	margin-top:40px; 
+	width:720px !important;
+	background-color: #585858 !important;
+}
+
+#content a{ color: #FFFFFF; }
+
+.badge{ background-color: #848484 !important; }
+
+.container{ background-color: #000000; }
+
+.new-jumb{ background-color: black !important; }
+
+#user-avatar{
+	background-color:#000000;
+	margin-top:15px;
+	border: 2px solid #BDBDBD !important;
+}
+
+#content-infos{
+	margin-top:40px; 
+	border: 2px solid white !important;
+	width:750px;
+	margin-bottom:40px;">
+}
+
+#card-content p{ font-size:15px !important; }
+
+.btn-floating{ 
+	width:35px !important; 
+	height: 35px !important; 
+}
+
+.infos{	
+	color:black !important; 
+	font-weight:bold;
+}
+
+.infos-links{
+	background-color:#D8D8D8 !important;
+	margin : 10px 4.15;
+}
+
+.nav a{ color: #000000; }
+
+/* Menu bibliothèque */
+
+/*  Ajouter une couleur de fond à la navigation fixée en haut de la page. */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Styles des liens de la barre de navigation. */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Changement de la couleur de l'arrière plan des liens, forcer la couleur du lien à ne pas changer, en la définissant à la même couleur 
+   que celle de départ du menu. 4
+*/
+.topnav a:hover {
+  background-color: #FE642E;
+  color: #FFFFFF;
+  /* Enlever le soulignement des liens du menu. */
+  text-decoration:none
+}
+
+/* Ajout de cette classe pour mettre en évidence la page en cours. */
+.active {
+  background-color: #FF4000;
+  color: #FFFFFF;
+}
+
+/* Masquer le lien qui ouvre et ferme le menu (pour le responsive, sur des petits écrans). */
+.topnav .icon {
+  display: none;
+} 
+
+/* Partie responsive pour le menu. */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* 
+Classe "responsive" ajoutée au menu avec le JavaScript, lorsque l'utilisateur clique sur l'icône pour ouvrir ou fermer le menu.
+La classe rend le menu sur de petits écrans : on affiche les liens verticalement au lien d'horizontalement.
+*/
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#bloc-cond{
+	margin-bottom:100px;
+	text-align:center;
+	margin-top:35px;
+}
+
+#conditions{ margin-top:65px; }
+
+#list-users-profiles{ margin-left:45px; }
+
+#no-border{ border:none; }
+
+.informations{ width:350px; }
+
+#options, #empty{ margin-bottom:50px; }
+
+#slogan{
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
+	font-size:20px;
+	font-style: italic;
+	margin-right:25px !important;
+}
+
+#pagination{
+	display:flex;
+	justify-content:center;
+}
+
+#pagination li{ background-color: red !important; color: white !important; }
+
+#welcome{
+	margin-top:20px;
+	color:#FFFFFF;
+	background-color : #000000 !important;
+}
+
+#nodisplay{
+	display:none;
+}
+
+.confirm-comment{
+	margin-top:15px;
+}
+
+.modal-title, .modal-body{
+	color:black;
+	text-align:center;
+}
+
+
+
+.mb{ height:300px; }
+
+.input-field:hover{ background: none !important; }
+
+#resetpassword{ margin-top:35px; }
+
+#buttons-menu { margin-top:7px; }
+
+.profile_informations{
+	border:2px solid #FF4000;
+	height:auto;
+	border-radius:10px;	
+}
+
+#contact{
+	height:430px;
+}
+
+.resp{
+	width:720px;
+}
+
+#error-comment{
+	text-align: center;
+	font-weight:bold;
+	color:red
+}
+
+#upload-form{
+	margin-top:50px;
+	margin-left:-10px;
+}
+
+.fbc{ margin-top:35px; }
+
+#button-send{
+	margin-bottom:120px !important;
+	float:right;
+}
+
+#btn-style{
+	height:50px;
+}
+
+#btn-send-img{ margin-top:15px; }
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.labels{
+	color:#000000;
+	font-size:17px;
+}
+
+::-webkit-input-placeholder {
+   color: #000000;
+   font-size:16px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #000000;
+   font-size:16px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000000;
+   font-size:16px; 
+}
+
+:-ms-input-placeholder {  
+   color: #000000;
+   font-size:16px;  
+}
+
+.buttons{ 
+	margin-top:45px !important;
+	margin-bottom:35px !important;
+}
+
+#pictures-users{
+	width:230px;
+	height:230px;
+	margin-left:7px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#user{ font-size:18px; }
+
+#profil{
+	border-top:2px solid #FF0000;
+	border-bottom:2px solid #FF0000; 
+	display:flex;
+	flex-direction: column;
+	flex-direction: row;	
+	flex-flow:row wrap;
+	justify-content: flex-end;
+}
+
+#accueil{
+	margin-top:15px;
+	border:2px solid #6E6E6E;
+	margin-bottom:15px;
+	display:flex;
+	flex-direction: column;flex-direction: row;	
+	flex-flow:row wrap;
+	justify-content: flex-end;
+}
+
+#nb-visiteurs{
+	margin-top:15px;
+	border:2px solid #000000;
+	margin-bottom:30px;
+}
+
+#visiteurs{
+	text-align:center;
+	margin-top:10px;
+}
+
+#right-panel{ 
+	margin-top:30px; 
+	background-color: #000000;
+}
+
+.right{
+	background-color:#1C1C1C;
+}
+
+#menu-user{ margin-top: 10px; }
+
+a{ text-decoration: none !important; }
+
+
+
+.panel-info{ background-color: #000000 !important; }
+
+.panel-primary{ border-color: #FFFFFF; }
+
+#photos{ 
+	height:auto;
+	background-color: #000000 !important;
+}
+
+#table-pictures{
+	margin-left:-15px;
+	width:735px;
+	margin-top:50px;
+}
+
+#dm{
+	width:50px;
+	background-color:none;
+    height:35px;
+	margin-top:-35px;
+}
+
+#form-pictures{
+	margin-left:-45px;
+	
+}
+
+.footer-page{
+	background-color:#222222 !important;
+}
+
+.nav-wrapper{
+	background-color:#222222 !important;
+}
+
+#tab1{ margin-top:25px; }
+
+#user-infos{ 
+	margin-top:30px;
+	background-color:black !important;
+}
+
+.user-profile{
+	display: block;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-bottom:30px;
+	margin-right: auto;
+	width:230px;
+	height:230px;
+	border:5px double #FFFFFF; 	
+	border-radius:5px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+.uprofile{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height:270px;
+	width:270px;
+	border:5px double #FF4000;
+	border-radius:5px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.user-pictures{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:450px;
+	border:5px double #FF4000; 	
+	border-radius:5px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+
+#img-subjects{
+	width:50px;
+	height:50px;
+	border:2px solid #000000;
+}
+
+#hr-stylised{
+	border:none;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#header-profile{
+	background-color: #E6E6E6;
+}
+
+#user-infos-profile{
+	background-color: #E6E6E6;
+	margin-top:35px;
+}
+
+#title-subject{
+	font-weight:bold;
+	margin-top:10px;
+	color:#FFFFFF;
+} 
+
+#title-subject-home{
+	font-weight:bold;
+	margin-top:10px;
+	color:#000000;
+} 
+
+#infos{ margin-top: 50px; }
+
+#posts{ margin-top: 50px; }
+
+#avatar{ margin-left:7px; margin-top:5px; }
+
+.forms-label{ color:#000000; font-size:12px; }  
+
+.form{ height:350px; }
+
+.form2{ height:230px; }
+
+#samepass{
+	color:#FF0040;
+	text-align:center;
+	font-weight:bold;	
+}
+
+#succeschpass{
+	color:#FF0000;
+	text-align:center;
+	font-weight:bold;	
+}
+
+.btn-form-home{ margin-top:15px; }
+
+#date-display {
+	color:#FFFFFF;
+	font-weight: bold;
+}
+
+#date-display-subject {
+	color:#FF0000;
+	margin-top:-10px;
+	font-weight: bold;
+	float:right;
+}
+
+#date-display-home {
+	color:#FF0000;
+	font-weight: bold;
+}
+
+#footer-text{
+	font-family: 'Anton', sans-serif;
+	font-size:17px;
+}    
+
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	background-color:#FFFFFF !important;	 
+}
+
+.titlesite{ 
+	font-family: "Pastorof"; 
+	color:#FFFFFF !important;	
+	margin-top:15px;
+	font-size:34px !important;
+}
+
+#form-inscription{ margin-top:30px; }
+
+#profil_user{ margin-left:20px; } 
+
+footer{
+  position: relative;
+  width: 100%; 
+  bottom:-45px; 
+}
+
+#form{ margin-top:50px; }
+
+#gallery { 
+	background-color:#2E9AFE !important;
+	margin-top:40px; 
+	margin-bottom:20px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color:#000000 !important;
+}
+
+.btn-perso{ width:150px;}
+
+.btn-perso-2{ margin-left:-150px;}
+
+.forms{ margin-top:200px; }
+
+#upload-img { 
+	width:540px; 
+}
+
+#discussion {
+	font-weight:bold;
+	margin-top:-25px;
+}
+
+.discussion { margin-top:140px; }
+
+#comment {
+	font-size:17px;
+	margin-top:25px;
+}
+
+#content { text-align:center; }
+
+#gestion_membres {
+	color : #ffffff;
+	margin-top:85px;
+}
+
+#informations-section{ margin-top:45px; }
+
+#menu-ntabs{ margin-top:35px; }
+
+#avatar { margin-top:15px; }
+
+.background{
+	/*background:#e2f6ff url('images/background.gif') center top no-repeat;*/
+	padding-left:10%;
+	padding-right:10%;
+	font-family:Arial, Geneva, sans-serif;
+}
+
+.pseudo{ font-size:21px; }
+
+#pseudo{ color:#FFFFFF; }
+
+.active{ background-color: #000000 !important; }
+
+.nav-pills > li.active > a{ background-color: #848484 !important; }
+
+
+.nav-pills > .active > a > .badge{ 
+	color: #FFFFFF !important; 
+	background-color: #000000 !important;
+}
+
+.align{ text-align:center; }
+
+#div1 {
+    background-color: #ff0000;
+    width: 200px;
+    float: left;
+}
+#div2 {
+    background-color: #00ff00;
+    width: 400px;
+    float: left;
+}
+
+.members {
+	margin-top:20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width:300px;
+	height:400px;*/
+	margin-bottom:25px;
+	border:5px double #FF4000;
+	border-radius:5px;
+}
+
+.illustrations {
+	margin-top:10px;
+	padding-right: -5px;
+	margin: 10px;	
+	width:200px;
+	float:right;
+	height:200px;
+	margin-bottom:25px;
+	border:5px double #000000;
+	border-radius:5px;
+}
+
+#deconnexion {
+	margin-top:-120px !important;
+	padding-right: -5px;
+	margin: 10px;	
+	float:right;	
+	margin-bottom:25px;	
+	border-radius:5px;
+}
+
+#btn-upload { margin-top:25px; }
+
+#button {
+	margin-top:25px;
+}
+
+label{
+    width: 250px; 
+	display: block;
+	float:left;
+}
+
+ul.pagin {
+    display: inline-block;
+    padding: 0;	
+	padding-top:5px;
+    margin: 0;
+	padding-left: 0;
+	border-radius: 4px;
+}
+
+ul.page li {display: inline; }
+
+ul.page li a {  
+	margin-top:10px;
+	background-color: #fff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #337ab7;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;	
+}
+
+input { width:300px; }
+
+#zone-membre { float:left; }
+
+#container-zone-membre {
+	height:750px;
+	margin-top:10px;
+}
+
+#sujet {
+	text-align:center;
+	margin-top:-265px;
+	color:red;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+#description-sujet {
+	text-align:center;
+	margin-top:115px;
+	color:red;
+	font-weight:bold;
+}
+
+#infos-comments { margin-top:45px; }
+
+#button-form-comments { margin-top:50px; }
+
+#upload-img { margin-top:45px; }
+
+#picture {
+	margin-bottom:45px;
+}
+
+#validate_form { margin-top:20px; }
+
+#content {
+	margin-left:15px;
+	margin-top:20px;
+}
+
+#one {
+  background-color:#2E9AFE;
+  float:left; 
+  margin-right:20px;
+  width:650px;
+  height:2000px;
+  min-height:1500px;
+}
+
+#two { 
+  background-color: #FFFFFF;
+  height:2000px;
+}
+
+nav a:hover{ 
+ text-decoration:none; 
+ color:yellow;
+} 
+
+.links-white{
+	color:#FFFFFF;
+	font-size:15px;
+}
+
+#navbar-bibli{ margin-top:50px; }
+
+#biblio{ margin-top:65px; }
+
+#button-navbar{
+	background-color:none !important;
+}
+
+#bibliotheque{ margin-top:50px; }
+
+.img-bibliotheque{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.img-albums{
+	width:200px;
+	height:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.img-responsive{
+   display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+.menu-forum{
+	margin-top:65px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#albums{
+	margin-top:50px;
+	height:650px;
+	width:1100px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#title-albums{
+	text-align:center;
+	font-weight:bold;
+	color:#000000;
+}
+
+#bibli{ margin-top:45px; }
+
+@media screen and (max-width: 640px) {
+  table,
+  tbody,
+  tr,
+  td {
+	display: block;
+	width: auto!important;   
+  }
+  
+  .links-white{
+		color:#FFFFFF;
+		font-size:16px;
+	}
+  
+  #footer-page { width:1500px; }
+  
+  #monmenu{
+	  margin-left:60px;
+  }
+  
+  #responsive-nav{
+	text-align:center;
+  }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+	.links-white{
+		color:#FFFFFF;
+		font-size:16px;
+	}
+	
+	p { 
+		font-size: 10px; 
+		margin-left:5px !important;
+	}
+	
+}
+
+
+
